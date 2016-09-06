@@ -51,6 +51,7 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
                 Intent intent1 = new Intent(WelcomeActivity.this, AdActivity.class);
                 startActivity(intent1);
                 finish();
+
         }
     }
 
