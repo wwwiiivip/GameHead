@@ -5,61 +5,94 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/activity_main_viewPager"
+    <FrameLayout
+        android:id="@+id/activity_main_framlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/activity_main_radioGroup"/>
-    <RadioGroup
-        android:id="@id/activity_main_radioGroup"
+        android:background="@mipmap/ic_launcher"
+        android:layout_above="@+id/activity_main_line_iv" />
+
+    <ImageView
+        android:id="@+id/activity_main_line_iv"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
+        android:layout_height="2dp"
         android:layout_alignParentBottom="true"
-        android:padding="10dp">
+        android:layout_marginBottom="55dp"
+        android:background="@color/gray" />
+
+    <ImageView
+        android:id="@+id/activity_main_line_iv2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray2" />
+    <RadioGroup
+        android:id="@+id/activity_main_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
         <RadioButton
             android:id="@+id/activity_main_rb_news"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:text="动态"
-            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:button="@null"
-            android:drawableTop="@drawable/selector_radiobutton_news"/>
-
+            android:checked="true"
+            android:drawableTop="@drawable/selector_radiobutton_news"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="动态"
+            android:textColor="@drawable/selector_rb_text" />
         <RadioButton
             android:id="@+id/activity_main_rb_video"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:text="视频"
-            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:button="@null"
-            android:drawableTop="@drawable/selector_radiobutton_video"/>
-
+            android:drawableTop="@drawable/selector_radiobutton_video"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="视频"
+            android:textColor="@drawable/selector_rb_text" />
         <RadioButton
             android:id="@+id/activity_main_rb_contest"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:button="@null"
-            android:drawableTop="@drawable/selector_radiobutton_video"/>
-
+            android:drawableTop="@drawable/selector_radiobutton_contest"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textSize="2dp" />
         <RadioButton
             android:id="@+id/activity_main_rb_bid"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:text="竞购"
-            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:button="@null"
-            android:drawableTop="@drawable/selector_radiobutton_bid"/>
+            android:drawableTop="@drawable/selector_radiobutton_bid"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="竞购"
+            android:textColor="@drawable/selector_rb_text" />
         <RadioButton
             android:id="@+id/activity_main_rb_mine"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:text="我的"
-            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:button="@null"
-            android:drawableTop="@drawable/selector_radiobutton_mine"/>
-
-
+            android:drawableTop="@drawable/selector_radiobutton_mine"
+            android:gravity="center_horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="我的"
+            android:textColor="@drawable/selector_rb_text" />
     </RadioGroup>
 </RelativeLayout>
