@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.v7.widget.Toolbar
+    android:background="@color/toolbar_red"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/toolbar_login_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+    <de.hdodenhof.circleimageview.CircleImageView
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/write"
+        android:id="@+id/toolbar_main_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/me__image_head"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_main_iv"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/write"
+            android:layout_marginTop="5dp"
+            android:text="立即登录"/>
+    </RelativeLayout>
+</RelativeLayout>
+</android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

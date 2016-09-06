@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_main_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_main_radioGroup"/>
+    <RadioGroup
+        android:id="@id/activity_main_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            android:id="@+id/activity_main_rb_news"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="动态"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_radiobutton_news"/>
+
+        <RadioButton
+            android:id="@+id/activity_main_rb_video"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="视频"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_radiobutton_video"/>
+
+        <RadioButton
+            android:id="@+id/activity_main_rb_contest"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_radiobutton_video"/>
+
+        <RadioButton
+            android:id="@+id/activity_main_rb_bid"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="竞购"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_radiobutton_bid"/>
+        <RadioButton
+            android:id="@+id/activity_main_rb_mine"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:gravity="center_horizontal"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_radiobutton_mine"/>
+
+
+    </RadioGroup>
+</RelativeLayout>
