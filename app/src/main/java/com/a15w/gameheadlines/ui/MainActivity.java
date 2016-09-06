@@ -8,7 +8,7 @@ import android.widget.Toast;
 import com.a15w.gameheadlines.R;
 
 public class MainActivity extends AppCompatActivity {
-    private long exitTime;
+    private long exitTime; 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
